@@ -27,11 +27,11 @@ const ToolsSection = () => {
               </div>
 
               
-<div className={styles.icon_container}>
+{/* <div className={styles.icon_container}>
   <svg className={styles.icon}  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="10" fill="blue" />
   </svg>
-</div>
+</div> */}
 
             </div>
           </div>

@@ -27,8 +27,7 @@ const AboutSection = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">About Us</h2>
           <p className="text-lg text-gray-600 mb-8">
-            We are a team of creative minds passionate about video editing and storytelling.
-            Our mission is to empower individuals and businesses to create captivating content with ease.
+          We're not just another tech company—we're a team of passionate storytellers on a mission to empower individuals and businesses alike. With years of experience in video editing, we understand the importance of simplicity and creativity. That's why we've created Videoo, a platform that puts the power of professional editing in your hands.
           </p>
           <p className="text-lg text-gray-600">
             With our intuitive platform, you can unleash your creativity and bring your ideas to life.

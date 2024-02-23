@@ -30,42 +30,37 @@ class MainSection extends Component {
     this.setState({ selectedFiles: files, selectedFileNames: fileNames });
   }
 
-  // Function to handle form submission
   async handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData();
-    for (let i = 0; i < this.state.selectedFiles.length; i++) {
-      formData.append('videos', this.state.selectedFiles[i]);
-    }
+    console.log("Form submitted");
+  
     try {
-      const response = await axios.post('/upload', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data'
-        }
-      });
-      console.log('Upload successful:', response.data);
-      // Handle success response from backend
+      const response = await axios.post('http://localhost:3001/upload');
+      console.log("Backend response:", response.data);
     } catch (error) {
-      console.error('Upload failed:', error);
+      console.error('Error:', error);
       // Handle error response from backend
     }
   }
+  
 
   render() {
     return (
       <>
+      <div className="container mx-auto">
       <section className={`${styles.introSection} bg-gray-100 py-12`}>
           <div className={`${styles.container} mx-auto`}>
             <div className={styles.heading}>
-              <h2>Edit Your Videos Like a Pro</h2>
+              <h2>Edit Your Videos Like a Pro!</h2>
               <p>Effortlessly merge, split, and trim your videos with our intuitive platform.</p>
             </div>
           </div>
         </section>
+        
         <main className={`${styles.mainSection} bg-gray-100 py-12`}>
           <div className={`${styles.container} mx-auto`}>
-            <h1 className="text-4xl font-bold text-center mb-8">Welcome to My Video Merger</h1>
-            <p className="text-lg text-center">Merge your videos easily with our simple and intuitive tool.</p>
+            {/* <h1 className="text-4xl font-bold text-center mb-8">Welcome to My Video Merger</h1>
+            <p className="text-lg text-center">Merge your videos easily with our simple and intuitive tool.</p> */}
             <form className="mt-8" onSubmit={this.handleSubmit}>
               <label htmlFor="video-upload" className={`${styles.uploadLabel} block text-center cursor-pointer border-2 border-dashed border-gray-400 px-4 py-8 rounded-md`}>
                 <input
@@ -83,6 +78,7 @@ class MainSection extends Component {
             </form>
           </div>
         </main>
+        </div>
       </>
     );
   }
