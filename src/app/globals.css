@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global Styles */
+
+/* Color Scheme */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #ffa500; /* Orange */
+  --neutral-color: #333333; /* Gray */
+  --overlay-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  --cta-color: #28a745; /* Green */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Font Styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif; /* Default font family */
+  font-size: 16px; /* Default font size */
+  line-height: 1.6; /* Default line height */
+  color: var(--neutral-color); /* Default text color */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Links */
+a {
+  color: var(--primary-color); /* Link color */
+  text-decoration: none; /* Remove underline by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Container */
+.container {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center container */
+  padding: 0 20px; /* Add padding on sides */
 }

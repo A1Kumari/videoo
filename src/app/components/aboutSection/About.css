@@ -1,0 +1,12 @@
+/* mainSection.module.css */
+
+.about-section {
+    background-image: url('../../images/vdediting\ \(6\).jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  

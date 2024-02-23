@@ -1,0 +1,23 @@
+/*initial navbar that is first navbar*/
+
+/* navbar.module.css */
+
+.navbar {
+    /* Blue background color */
+    padding: 1rem 2rem; /* Padding on the top and bottom */
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .navbar-brand {
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold font weight */
+    font-size: 1.5rem; /* Font size */
+  }
+  
+  .menu-icon {
+    color: #fff; /* White color for menu icon */
+    cursor: pointer; /* Cursor pointer */
+  }
+  

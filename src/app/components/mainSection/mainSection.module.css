@@ -1,0 +1,49 @@
+/* mainSection.module.css */
+
+.introSection {
+  background-image: url('../../images/vdediting\ \(1\).jpg'); /* Replace with your hero background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.heading {
+  mix-blend-mode:luminosity; /* Add CSS blend mode */
+}
+
+.heading h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heading p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+
+
+  
+  .mainSection {
+    text-align: center;
+  }
+  
+  .uploadLabel {
+    transition: all 0.3s ease;
+  }
+  
+  .uploadLabel:hover {
+    border-color: #4CAF50;
+  }
+  
+  .uploadButton {
+    transition: all 0.3s ease;
+  }
+  
+  .uploadButton:hover {
+    background-color: #4CAF50;
+  }
