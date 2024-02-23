@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Footer Logo */}
             <div className="mb-4 md:mb-0">
-              <img src="/logo-white.png" alt="Logo" className="h-12" />
+              {/* <img src="/logo-white.png" alt="Logo" className="h-12" /> */}
             </div>
             {/* Footer Links */}
             <nav className="flex flex-wrap justify-center md:justify-end">

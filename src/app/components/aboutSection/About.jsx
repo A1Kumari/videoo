@@ -32,11 +32,11 @@ const AboutSection = () => {
           </p>
           <p className="text-lg text-gray-600">
             With our intuitive platform, you can unleash your creativity and bring your ideas to life.
-            Whether you're a professional videographer or a beginner enthusiast, we've got you covered.
+            Whether you&apos;re a professional videographer or a beginner enthusiast, we&apos;ve got you covered.
           </p>
         </div>
         <div className="flex justify-center mt-12">
-          <img src="/team.jpg" alt="Team" className="rounded-lg shadow-lg" style={{ maxWidth: '600px' }} />
+          {/* <img src="/team.jpg" alt="Team" className="rounded-lg shadow-lg" style={{ maxWidth: '600px' }} /> */}
         </div>
       </div>
     </section>
